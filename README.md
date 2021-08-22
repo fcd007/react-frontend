@@ -1,10 +1,45 @@
-# Getting Started with Create React App
+# Projeto Aplicativo full-stack com Spring Boot, Hibernate, Microsoft SQL
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Descrição do projeto
 
-## Available Scripts
+Projeto Java + ReactJS web full-stack que é um aplicativo básico de gerenciamento de funcionários com recursos CRUD:
 
-In the project directory, you can run:
+- Listar | GET | `funcionarios/api/v1/funcionarios` | Status Code (200 (OK)) | Busca todos os funcionários
+- Criar | POST | `funcionarios/api/v1/funcionarios/criar` | Status Code (201 (OK)) | criar um novo funcionário
+- Buscar | GET | `funcionarios/api/v1/funcionarios/{id}` | Status Code (200 (OK)) | Buscar funcionário
+- Editar | PUT | `funcionarios/api/v1/funcionarios/{id}` | Status Code (200 (OK)) | Atualizar funcionário
+- Excluir | DELETE | `funcionarios/api/v1/funcionarios/{id}` | Status Code (204 (No Content)) | Deletar funcionário
+
+## Antes de iniciar
+
+Verifique o ambiente com os seguintes parâmetros:
+
+- Instalação Java 8+;
+- yarn ou npm - NodeJS 14+;
+- Eclipse IDE ou Spring Tool Suite [STS];
+- Verifique o projeto backend - script de criação do banco de dados;
+- MS SQL Server 2016+;
+- Conexão API Rest;
+
+## Ferramentas e tecnologias do lado do servidor usadas
+
+- Spring Boot 2 +
+- SpringData JPA (Hibernate)
+- Maven 3.2 +
+- JDK 1.8
+- Tomcat 9+ / JBoss Wildfly
+- Banco de dados MS SQL Server
+
+## Ferramentas e tecnologias do lado do cliente usadas
+
+- React
+- Modern JavaScript (ES6)
+- NodeJS and Yarn
+- VS Code IDE
+- Create React App CLI
+- Bootstrap 4.5 and Axios HTTP Library
+
+Bora ao projeto, entra na pasta frontend e execute:
 
 ### `yarn start`
 
@@ -14,52 +49,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
 ### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
 ### Deployment
 
